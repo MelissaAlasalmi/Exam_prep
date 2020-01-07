@@ -27,10 +27,11 @@ char    *ft_strrev(char *str)
 
     i = 0;
     len = 0;
-    while (str[len] != '\0')
-        len++;
-    len = len - 1;
-    printf("\n%d", len);
+    while (str[i] != '\0')
+        i++;
+    len = i;
+    i = 0;
+    printf("len:%d\n", len);
     while (i < len)
     {
         c = str[i];
@@ -39,6 +40,7 @@ char    *ft_strrev(char *str)
         i++;
         len--;
     }
+    str[i] = '\0';
     return (str);
 }
 
