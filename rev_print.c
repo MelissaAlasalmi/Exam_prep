@@ -10,8 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//* Write a program that takes a string and displays the string in reverse followed by a new line. if the number of parameters is not one, the program displays a new line. example ' abc ' becomes ' cba ' and ' abC' becomes ' Cba ' *//
-//
+/* Write a program that takes a string and displays the string in reverse 
+** followed by a new line. if the number of parameters is not one, the program 
+** displays a new line. example ' abc ' becomes ' cba ' and ' abC' becomes 
+** ' Cba '
+*/
 
 #include <unistd.h>
 

@@ -1,3 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rotone.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: malasalm <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/07 12:34:26 by malasalm          #+#    #+#             */
+/*   Updated: 2020/01/07 12:34:32 by malasalm         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
+** Write a program that takes a string and displays it, replacing each of its
+** letters by the next one in alphabetical order.
+** 'z' becomes 'a' and 'Z' becomes 'A'. Case remains unaffected.
+** The output will be followed by a \n.
+** If the number of arguments is not 1, the program displays \n.
+*/
+
 #include <unistd.h>
 
 void    ft_putchar(char c)

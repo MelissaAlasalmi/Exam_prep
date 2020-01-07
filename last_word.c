@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   last_word.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: malasalm <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/07 12:26:08 by malasalm          #+#    #+#             */
+/*   Updated: 2020/01/07 12:26:14 by malasalm         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 // Write a program that takes a string and displays its last word followed by a \n.
 // A word is a section of string delimited by spaces/tabs or by the start/end of
 // the string. If the number of parameters is not 1, or there are no words, display 
