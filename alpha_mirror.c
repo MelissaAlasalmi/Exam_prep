@@ -1,12 +1,24 @@
-// Write a program called alpha_mirror that takes a string and displays this string
-// after replacing each alphabetical character by the opposite alphabetical
-// character, followed by a newline. Case is not changed. If the number of arguments 
-// is not 1, display only a newline.
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   alpha_mirror.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: malasalm <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/01/07 10:49:29 by malasalm          #+#    #+#             */
+/*   Updated: 2020/01/07 10:49:35 by malasalm         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-// a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z
-// z  y  x  w  v  u  t  s  r  q  p  o  n  m  l  k  j  I  h  g  f  e  d  c  b  a
-
-// hello = svool
+/* 
+** Write a program called alpha_mirror that takes a string and displays this string
+** after replacing each alphabetical character by the opposite alphabetical
+** character, followed by a newline. Case is not changed. If the number of arguments 
+** is not 1, display only a newline.
+** a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z
+** z  y  x  w  v  u  t  s  r  q  p  o  n  m  l  k  j  I  h  g  f  e  d  c  b  a
+** hello = svool
+*/
 
 #include <unistd.h>
 

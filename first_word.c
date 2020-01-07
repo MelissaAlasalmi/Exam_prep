@@ -10,7 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//* Write a program that takes a string and displays its first word followed by a new line. A word is a section of string delimited by spaces/tabs or by the start/end of the string. If the number of parameters is not one, or if there are no words, display a new line *//
+/* 
+** Write a program that takes a string and displays its first word followed by 
+** a new line. A word is a section of string delimited by spaces/tabs or by the 
+** start/end of the string. If the number of parameters is not one, or if there are no words, 
+** display a new line 
+*/
 
 #include <unistd.h>
 
