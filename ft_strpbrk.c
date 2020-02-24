@@ -48,7 +48,7 @@ int main(void)
 
     str = "monsterrrr";
     c = "abcdefghijkl";
-    printf("\n%s\n", strpbrk(str, c));
-    printf("\n%s\n", ft_strpbrk(str, c));
+    printf("strpbrk output: %s\n", strpbrk(str, c));
+    printf("ft_strpbrk output: %s\n", ft_strpbrk(str, c));
     return (0);
 }
