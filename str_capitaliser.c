@@ -30,7 +30,7 @@ void	str_capitaliser(char *argv)
                 ft_putchar(c);
             i++;
         }
-		while (argv[i] && (argv[i] != ' ' || argv[i] != '\t'))
+		while (argv[i])
 		{
             c = argv[i];
             if (c >= 'A' && c <= 'Z')
@@ -38,6 +38,8 @@ void	str_capitaliser(char *argv)
                 c = c + 32;
                 ft_putchar(c);
             }
+            else if (argv[i] == ' ' || argv[i] == '\t')
+                break ;
             else 
                 ft_putchar(c);
             i++;
