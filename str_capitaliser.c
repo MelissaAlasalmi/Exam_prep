@@ -7,41 +7,35 @@ void	ft_putchar(char c)
 
 void	str_capitaliser(char *argv)
 {   
-    int i;
-    char c;
-
-    i = 0;
-	while (argv[i] != '\0')
+	while (*argv != '\0')
 	{
-		while (argv[i] == ' ' || argv[i] == '\t')
+		while (*argv == ' ' || *argv == '\t')
         {
-			ft_putchar(argv[i]);
-            i++;
+			ft_putchar(*argv);
+            *argv++;
         }
-		if (argv[i] && (argv[i] != ' ' || argv[i] != '\t'))
+		if (*argv >= 'a' && *argv <= 'z' && (*argv != ' ' || *argv != '\t'))
 		{
-            c = argv[i];
-            if (c >= 'a' && c <= 'z')
+            *argv = *argv - 32;
+            ft_putchar(*argv);
+        }
+        else
+        {
+            ft_putchar(*argv);
+            *argv++;
+        }
+		while (*argv && (*argv != ' ' || *argv != '\t'))
+		{
+            if (*argv >= 'A' && *argv <= 'Z')
             {
-                c = c - 32;
-                ft_putchar(c);
+                *argv = *argv + 32;
+                ft_putchar(*argv);
             }
             else 
-                ft_putchar(c);
-            i++;
+                ft_putchar(*argv);
+            *argv++;
         }
-		while (argv[i] && (argv[i] != ' ' || argv[i] != '\t'))
-		{
-            c = argv[i];
-            if (c >= 'A' && c <= 'Z')
-            {
-                c = c + 32;
-                ft_putchar(c);
-            }
-            else 
-                ft_putchar(c);
-            i++;
-        }
+        *argv++;
 	}
 }
 
