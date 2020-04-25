@@ -1,18 +1,31 @@
 #include <unistd.h>
 
-int ft_parser(char c, char *s1)
+int ft_parser(char c, char *str)
 {
   int i;
   
   i = 0;
-  while (s1[i])
+  while (str[i])
   {
-    if (c != s1[i])
+    if (c != str[i])
         i++;
-    else if (c == s1[i])
+    else if (c == str[i])
         return (1);
     }
   return (0);
+}
+
+void ft_backtracker(char *str, int i, int j)
+{
+    while (j >= 0)
+    {
+        if (str[i] == str[j])
+            break ;
+        else
+            j--;
+    }
+    if (j <= 0)
+        write(1, &str[i], 1);
 }
 
 void ft_union(char *s1, char *s2)
@@ -26,15 +39,7 @@ void ft_union(char *s1, char *s2)
     {
         if (s1[i] != s1[j])
         {
-            while (j >= 0)
-            {
-                if (s1[i] == s1[j])
-                    break ;
-                else
-                    j--;
-            }
-            if (j <= 0)
-              write(1, &s1[i], 1);
+            ft_backtracker(s1, i, j);
             i++;
             j = i - 1;
         }
@@ -51,17 +56,8 @@ void ft_union(char *s1, char *s2)
             j = i - 1;
             if (s2[i] != s2[j])
             {
-                while (j >= 0)
-                {
-                    if (s2[i] == s2[j])
-                        break ;
-                    else
-                        j--;
-                }
-                if (j <= 0)
-                    write(1, &s2[i], 1);
+                ft_backtracker(s2, i, j);
                 i++;
-                j = i - 1;
             }
             else
                 i++;
