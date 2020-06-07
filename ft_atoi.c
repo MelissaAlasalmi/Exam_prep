@@ -1,3 +1,8 @@
+// Write a function that converts the string argument str to an integer (type int)
+// and returns it.
+
+// It works much like the standard atoi(const char *str) function.
+
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
