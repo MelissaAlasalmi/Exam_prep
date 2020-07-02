@@ -1,3 +1,7 @@
+// Write a function that allocates (with malloc()) an array of integers, fill it with consecutive
+// values that begin at start and end at end (Including start and end !), then
+// returns a pointer to the first value of the array.
+
 #include <stdlib.h>
 #include <stdio.h>
 
