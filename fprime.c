@@ -18,9 +18,9 @@ void	fprime(int nb)
 				nb = nb / prime;
 				if (nb > 1)
 					printf("*");
-				prime--;
 			}
-			prime++;
+			else
+				prime++;
 		}
 	}
 }
@@ -31,6 +31,9 @@ int		main(int argc, char **argv)
 	if (argc != 2)
         printf("\n");
     else
+	{
 		fprime(atoi(argv[1]));
+		printf("\n");
+	}
 	return (0);
 }
