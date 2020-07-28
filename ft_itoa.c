@@ -28,6 +28,8 @@ char	*ft_itoa(int nbr)
     str = (char *)malloc(sizeof(char) * (i + 1));
     str[i] = '\0';
     i--;
+    if (nbr == -2147483648)
+        return ("-2147483648");
     if (nbr == 0)
         str[0] = '0';
     if (nbr < 0)
