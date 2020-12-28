@@ -81,4 +81,4 @@ A function that sorts (in-place) the 'tab' int array, that contains exactly 'siz
 ## Lvl05:
 
 ### ft_itoa_base
-Works the same way as ft_itoa, but it also takes "base" as a paramater, allowing you to carry out the conversion for any base.
+Works the same way as ft_itoa, but it also takes "base" as a parameter, allowing you to carry out the conversion for any base.
